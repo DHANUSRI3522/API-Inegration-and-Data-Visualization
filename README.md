@@ -19,3 +19,7 @@ API Integration and Data Visualization
     3.Extract the timestamp by using JSON.
     4.By using the matplotlib the output  will be provided.
     5.Finally,validate the weatherpodcast of various cities.
+
+    *OUTPUT*
+
+    
