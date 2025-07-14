@@ -20,6 +20,6 @@ API Integration and Data Visualization
     4.By using the matplotlib the output  will be provided.
     5.Finally,validate the weatherpodcast of various cities.
 
-    *OUTPUT*
+*OUTPUT*
 
-    
+     ![Image](https://github.com/user-attachments/assets/3a5f0dbd-9ef8-45b4-aa1a-a36813b439a6)    
