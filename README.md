@@ -21,5 +21,6 @@ API Integration and Data Visualization
     5.Finally,validate the weatherpodcast of various cities.
 
 *OUTPUT*
+ ![WhatsApp Image 2025-07-14 at 8 18 16 PM](https://github.com/user-attachments/assets/6f44a8bc-cf56-4a5e-ad6e-d7b71adb0eab)
 
      ![Image](https://github.com/user-attachments/assets/3a5f0dbd-9ef8-45b4-aa1a-a36813b439a6)    
