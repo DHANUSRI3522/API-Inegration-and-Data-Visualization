@@ -1,0 +1,30 @@
+import requests
+import matplotlib.pyplot as plt
+from datetime import datetime
+
+API_KEY = 'b1b15e88fa797225412429c1c50c122a1'
+CITY = 'Chennai'
+URL = f'https://api.openweathermap.org/data/2.5/forecast?q={CITY}&appid={API_KEY}&units=metric'
+
+response = requests.get(URL)
+data = response.json()
+
+dates = []
+temperatures = []
+
+for item in data['list']:
+    dt_txt = item['dt_txt']
+    temp = item['main']['temp']
+    dates.append(datetime.strptime(dt_txt, "%Y-%m-%d %H:%M:%S"))
+    temperatures.append(temp)
+
+plt.figure(figsize=(12, 6))
+plt.plot(dates, temperatures, color='blue', marker='o', linestyle='dashed')
+plt.title(f"5-Day Temperature Forecast for {CITY}")
+plt.xlabel("Date & Time")
+plt.ylabel("Temperature (°C)")
+plt.grid(True)
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("weather_dashboard.png")
+plt.show()
